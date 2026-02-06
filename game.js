@@ -26,28 +26,28 @@ function preload() {
 
 function create() {
   // 로고 표시
-  this.add.image(400, 80, "logo").setScale(1);
+  this.add.image(800, 160, "logo").setScale(1);
 
   // 브랜드 문구
-  this.add.text(400, 140, "Challenge Your Speed", {
+  this.add.text(800, 280, "Challenge Your Speed", {
     fontSize: "20px",
     color: "#cccccc"
   }).setOrigin(0.5);
 
   // 점수
-  scoreText = this.add.text(50, 30, "Score: 0", {
+  scoreText = this.add.text(100, 60, "Score: 0", {
     fontSize: "24px",
     color: "#00ffcc"
   });
 
   // 타이머
-  timeText = this.add.text(650, 30, "Time: 30", {
+  timeText = this.add.text(1300, 60, "Time: 30", {
     fontSize: "24px",
     color: "#ffcc00"
   });
 
   // 타겟
-  target = this.add.image(400, 350, "target");
+  target = this.add.image(800, 700, "target");
   target.setScale(0.15);
   target.setInteractive();
 
@@ -77,8 +77,8 @@ function create() {
 }
 
 function moveTarget() {
-  const x = Phaser.Math.Between(50, 750);
-  const y = Phaser.Math.Between(200, 550);
+  const x = Phaser.Math.Between(100, 1500);
+  const y = Phaser.Math.Between(200, 1100);
   target.setPosition(x, y);
 }
 
