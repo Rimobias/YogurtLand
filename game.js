@@ -1,7 +1,7 @@
 const config = {
   type: Phaser.AUTO,
   width: 1600,
-  height: 1200,
+  height: 900,
   backgroundColor: "#111111",
   scene: {
     preload: preload,
@@ -47,7 +47,7 @@ function create() {
   });
 
   // 타겟
-  target = this.add.image(800, 700, "target");
+  target = this.add.image(800, 500, "target");
   target.setScale(0.15);
   target.setInteractive();
 
@@ -78,7 +78,7 @@ function create() {
 
 function moveTarget() {
   const x = Phaser.Math.Between(100, 1500);
-  const y = Phaser.Math.Between(200, 1100);
+  const y = Phaser.Math.Between(200, 800);
   target.setPosition(x, y);
 }
 
