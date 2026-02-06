@@ -1,7 +1,7 @@
 const config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width: 1600,
+  height: 1200,
   backgroundColor: "#111111",
   scene: {
     preload: preload,
@@ -26,7 +26,7 @@ function preload() {
 
 function create() {
   // 로고 표시
-  this.add.image(400, 80, "logo").setScale(0.4);
+  this.add.image(400, 80, "logo").setScale(1);
 
   // 브랜드 문구
   this.add.text(400, 140, "Challenge Your Speed", {
