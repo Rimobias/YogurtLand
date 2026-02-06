@@ -86,21 +86,21 @@ function endGame() {
   gameOver = true;
   target.destroy();
 
-  this.add.text(400, 300, "GAME OVER", {
+  this.add.text(800, 400, "GAME OVER", {
     fontSize: "40px",
     color: "#ff5555"
   }).setOrigin(0.5);
 
-  this.add.text(400, 350, "Final Score: " + score, {
+  this.add.text(800, 550, "Final Score: " + score, {
     fontSize: "28px",
     color: "#ffffff"
   }).setOrigin(0.5);
 
   // CTA 버튼
-  const button = this.add.rectangle(400, 420, 220, 50, 0x00ffcc);
+  const button = this.add.rectangle(800, 520, 420, 100, 0x00ffcc);
   button.setInteractive();
 
-  const buttonText = this.add.text(400, 420, "Visit Our Brand", {
+  const buttonText = this.add.text(800, 520, "Visit Our Brand", {
     fontSize: "20px",
     color: "#000000"
   }).setOrigin(0.5);
